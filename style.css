@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(crimson, red);
+}
+
+h1 {
+    position: fixed;
+    top: 100px;
+
+    color: whitesmoke;
+    font-size: 50px;
+    font-weight: 300px;
+
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-radius: 20px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.love {
+    width: 120px;
+    height: 50px;
+
+    font-size: 20px;
+    font-family: monospace;
+    font-style: italic;
+    font-weight: 900;
+
+    border: 2px solid;
+    border-image: linear-gradient(pink, hotpink, lightpink)2;
+}
+
+.no {
+    width: 120px;
+    height: 50px;
+
+    font-size: 20px;
+    font-family: monospace;
+    font-style: italic;
+    font-weight: 900;
+
+    border: 2px solid;
+    border-image: linear-gradient(pink, hotpink, lightpink)2;
+}
