@@ -15,7 +15,7 @@ h1 {
     top: 100px;
 
     color: whitesmoke;
-    font-size: 25px;
+    font-size: 50px;
     font-weight: 300px;
 
     border-top: 2px solid;
@@ -39,7 +39,7 @@ h1 {
     font-size: 20px;
     font-family: monospace;
     font-style: italic;
-    font-weight: 900;
+    font-weight: 900px;
 
     border: 2px solid;
     border-image: linear-gradient(pink, hotpink, lightpink)2;
@@ -52,7 +52,7 @@ h1 {
     font-size: 20px;
     font-family: monospace;
     font-style: italic;
-    font-weight: 900;
+    font-weight: 900px;
 
     border: 2px solid;
     border-image: linear-gradient(pink, hotpink, lightpink)2;
