@@ -28,13 +28,27 @@ h1 {
 a {
     text-decoration: none;
     color: black;
-    
 }
 
 .btn{
     display: flex;
     flex-direction: column;
+
     gap: 20px;
+}
+
+.love:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(red, whitesmoke, lightpink);
+    font-size: 25px;
+    color: green;
+}
+
+.no:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(red, whitesmoke, lightpink);
+    font-size: 25px;
+    color: red;
 }
 
 .love {
@@ -55,6 +69,10 @@ a {
     border: 2px solid;
     border-image: linear-gradient(pink, hotpink, lightpink)2;
     background: linear-gradient(pink, whitesmoke, whitesmoke);
+
+    transition: 0.2s;
+
+    cursor: pointer;
 }
 
 .no {
@@ -76,4 +94,9 @@ a {
     border: 2px solid;
     border-image: linear-gradient(pink, hotpink, lightpink)2;
     background: linear-gradient(pink, whitesmoke, whitesmoke);
+
+    transition: 0.2s;
+
+    cursor: pointer;
 }
+
