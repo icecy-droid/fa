@@ -21,7 +21,7 @@ body {
     text-align: center;
 }
 
-h1 {
+.page1 h1 {
     position: fixed;
     top: 35px;
 
@@ -35,12 +35,16 @@ h1 {
     text-align: center;
 }
 
+.page2 h1 {
+    color: aliceblue;
+}
+
 a {
     text-decoration: none;
     color: black;
 }
 
-.btn{
+.btn {
     display: flex;
     flex-direction: column;
 
