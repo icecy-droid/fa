@@ -26,7 +26,7 @@ body {
     top: 35px;
 
     color: whitesmoke;
-    font-size: 6vw;
+    font-size: clamp(22px, 6vw ,43px);
     font-weight: 300px;
 
     border-top: 2px solid;
