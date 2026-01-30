@@ -15,7 +15,7 @@ h1 {
     top: 100px;
 
     color: whitesmoke;
-    font-size: clamp(18px, 6vw, 32px);
+    font-size: clamp(22px, 15vw, 45px);
     font-weight: 300px;
 
     border-top: 2px solid;
@@ -35,6 +35,12 @@ a {
     flex-direction: column;
 
     gap: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 50px;
+   
 }
 
 .love:hover {
