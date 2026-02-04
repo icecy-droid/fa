@@ -3,15 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>ลองของดำ</title>
-</head>
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
 
-<body class="page1">
-    <h1>รักเรามั้ย คนสวย</h1>
-    <div class="btn">
-        <a href="page2.html" class="love">ร๊ากกกกก</a>
-        <a href="page2.html" class="no">ม่ายยย</a>
+    <title>หมาสงสัย</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            line-height: 1.5;
+            background: linear-gradient(plum, pink);
+            color: blueviolet;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 500px;
+            background: linear-gradient(red, plum, pink, lightpink);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px black;
+            text-align: center; 
+        }
+
+        h1 {
+            color: cadetblue;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-align: justify;
+            word-break: break-word;
+        }
+
+        .love-message {
+            color: black;
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin: 25px 0;
+            padding: 15px;
+            background: linear-gradient(plum, white , plum);
+            border-radius: 15px;
+            border-left: 5px solid black;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, pink, plum, snow);
+            color: blueviolet;
+            padding: 14px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 10px 5px;
+            border: none;
+            cursor: pointer;
+            min-height: 48px;
+            min-width: 120px;
+            transition: transform 0.2s;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        @media (max-width: 360px) {
+            h1 { font-size: 1.8rem; }
+            p { font-size: 1rem; }
+            .container { padding: 20px 15px;}
+        }
+
+        @media (min-width: 768px) {
+            .content { padding: 35px; }
+            h1 { font-size: 2.5rem; }
+        }
+
+         @media (orientation: landscape) and ( max-height: 500px) {
+            .container { padding: 10px; }
+            .content { max-width: 90%; }
+            h1 { font-size: 1.8rem; margin-bottom: 10px; }
+         }
+    </style>
+</head>
+   
+<body>
+ <div class="container">
+        <div class="content">
+            <h1> ถึงโบตี้คนดีคนเดิม </h1>
+
+            <p> ขอบใจมึงมากเลยที่ช่วยกูดูโค้ดของกู แต่อันนี้ยังไม่เสร็จ ยังอีกยาวไกล แต่ก็ ใกล้ แล้ว รอดูได้เลยอันนี้ ทดสอบบบบ</p>
+           
+            <div class="love-message">
+                "ลองระบบว่ามันจะเป็นไง"
+            </div>
+            
+            <p>เทสระบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบ</p>
+        </div>
+
+        <div id="secret" style="display: none; margin-top: 20px; padding: 15px; border-radius: 10px;">
+            <p>กูกูกาก้า กูกูกาก้า กูกูกาก้า กูกูกาก้า กูกูกาก้า</p>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <button class="btn" onclick="showLove()">กดดิไอดำโบ๊ท</button>
+            <a href="#secret" class="btn">ข้อความลับ</a>
+        </div>
     </div>
+
+    <script>
+        function showLove() {
+            alert('เยี่ยมเลย')
+        }
+
+        document.querySelector('a[href="#secret"]').addEventListener('click', function(e){
+            e.preventDefault();
+            document.getElementById('secret').style.display = 'block';
+        });
+
+        let lastTouchEnd = 0;
+        document.addEventListener('touchend', function(event){
+            const now = (new Data()).getTime();
+            if (now - lastTouchEnd <= 300) {
+                event.preventDefault();
+            }
+            lastTouchEnd = now;
+        }, false);
+    </script>
 </body>
 </html>
